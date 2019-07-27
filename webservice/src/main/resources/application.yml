@@ -1,0 +1,14 @@
+server:
+  port: 8001
+  ssl:
+    enabled: true
+    key-store-type: PKCS12
+    key-store: classpath:server-cert.keystore
+    key-password: htb98980
+    key-store-password: htb98980
+    key-alias: my-cert-alias
+
+logging:
+  level:
+   org.springframework.ws.client.MessageTracing.sent: trace
+   org.springframework.ws.client.MessageTracing.received: trace

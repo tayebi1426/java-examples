@@ -18,7 +18,7 @@ public class InquiryPersonWebClient {
         webServiceTemplate=new WebServiceTemplate(soapMessageFactory);
         webServiceTemplate.setMarshaller(inquiryPersonMarshaller);
         webServiceTemplate.setUnmarshaller(inquiryPersonMarshaller);
-        this.webServiceTemplate.setDefaultUri("http://127.0.0.1:8001/ws");
+        webServiceTemplate.setDefaultUri("https://127.0.0.1:8001/ws");
     }
 
     public Person inquiryPerson(String uniqueCode) {

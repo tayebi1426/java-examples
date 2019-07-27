@@ -30,6 +30,8 @@ public class WebServiceConfig extends WsConfigurerAdapter {
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
         wsdl11Definition.setPortTypeName("PersonPort");
         wsdl11Definition.setLocationUri("/ws");
+        wsdl11Definition.setCreateSoap11Binding(false);
+        wsdl11Definition.setCreateSoap12Binding(true);
         wsdl11Definition.setTargetNamespace(PersonEndpoint.NAMESPACE_URI);
         wsdl11Definition.setSchema(countriesSchema);
         return wsdl11Definition;

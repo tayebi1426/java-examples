@@ -15,7 +15,7 @@ public class WebserviceApplicationTests {
 	InquiryPersonWebClient inquiryPersonWebClient;
 	@Test
 	public void contextLoads() {
-		Person person = inquiryPersonWebClient.inquiryPerson("186124785988");
+		Person person = inquiryPersonWebClient.inquiryPerson("1861247859");
 		System.out.println("person : "+person.getFirstName());
 	}
 
